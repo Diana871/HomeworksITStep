@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 01 ВОЗРАСТ а)  -->
+    <!-- <script>
+        let age = +prompt('Enter your age');
+        if (age <= 12) alert('child');
+        if (age > 12 && age <=18) alert('Teenager');
+        if (age > 18 && age <=60) alert('Adult');
+        if (age > 60) alert('Old'); 
+    </script> -->
+
+    <!-- 01 ВОЗРАСТ б) -->
+    <!-- <script>
+        let age = +prompt('Enter your age');
+        let message = (age <= 12) ? 'Child' : 
+        (age > 12 && age <= 18) ? 'Teenager' : 
+        (age > 18 && age <=60) ? 'Adult' : 
+        (age > 60 && age < 110) ? 'Old' : 
+        'Enter correct age';
+        alert(message);
+    </script> -->
+   
+    <!-- 01 ВОЗРАСТ в) -->
+    <!-- <script>
+        let age = +prompt('Enter your age');
+        let message;
+        if (age <= 12) {
+            message = 'Child';
+        }
+        else if (age > 12 && age <= 18) {
+            message = 'Teenager';
+        }
+        else if (age > 18 && age <=60) {
+            message = 'Adult';
+        }
+        else if (age > 60 && age < 110) {
+            message = 'Old';
+        }
+        else {
+            message = 'Enter correct age!';
+        }
+        alert(message);
+    </script> -->
+
+    <!-- 02 СИМВОЛ НА КЛАВИАТУРЕ -->
+    <!-- <script>
+        let number = +prompt('Enter number from 0 to 9');
+        let symbol = (number == 0) ? ')' : 
+        (number == 1) ? '!' : 
+        (number == 2) ? '@' : 
+        (number == 3) ? '#' : 
+        (number == 4) ? '$' : 
+        (number == 5) ? '%' : 
+        (number == 6) ? '^' : 
+        (number == 7) ? '&' : 
+        (number == 8) ? '*' : 
+        '(' ;
+        alert(symbol); 
+    </script> -->
+
+    <!-- 03 ОДИНАКОВЫЕ ЦИФРЫ В ЧИСЛЕ -->
+    <!-- <script>
+        let num = +prompt('Enter three-digit number');
+
+        let num1 = (num - num%100)/100;
+        let num2 = ((num%100)-(num%10))/10;
+        let num3 = (num%10);
+
+        if (num1 == num2 || num1 == num3 || num2 == num3){
+            alert('This number contains the same figures');
+        }
+        else{
+            alert('No same figures in this number');
+        }
+    </script> -->
+
+    <!-- 04 ВЫСОКОСНЫЙ ГОД -->
+<!-- <script>
+    let year = +prompt('Enter year');
+    if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+        alert('Leap-year');
+    }
+    else {
+        alert('Not a Leap year');
+    }
+</script> -->
+
+<!-- 05 ПАЛИНДРОМ -->
+<script>
+    let x = +prompt('Enter five-digit number');
+
+    let n1 = (x - x%10000)/10000;
+    let n5 = x%10;
+    let n2 = ((x%10000)-(x%1000))/1000;
+    let n4 = ((x%100)-(x%10))/10;
+
+    if (n1 == n5 && n2 == n4){
+        alert('Palindrome!');
+    }
+    else{
+        alert('Not palindrome!');
+    }
+</script>
+
+</body>
+</html>
