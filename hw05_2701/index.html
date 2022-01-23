@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- СУММА ДИАПАЗОНА -->
+    <!-- <script>
+         let x = +prompt('Enter lower number');
+         let y = +prompt('Enter higher number');
+         let sum = 0;
+         while (x<=y) {
+            sum += x; 
+            x++
+         }
+         console.log(`range sum is ${sum}`);
+    </script> -->
+
+<!-- НОД -->
+ <!-- <script>
+    let x = +prompt('Enter first number');
+    let y = +prompt('Enter second number');
+    let box = 0;
+    
+    if (x > 0 && y > 0){
+        if(x == y){
+            console.log(`greatest common divisor ${x} and ${y} is ${x}`);
+        }
+        else if (x < y){
+            box = x;
+            while (x % box != 0 || y % box !=0){
+            box--;
+            }
+            console.log(`greatest common divisor ${x} and ${y} is ${box}`);
+        }
+        else if (x > y){
+            box = y;
+            while (x % box != 0 || y % box !=0){
+                box--;
+            }
+            console.log(`greatest common divisor ${x} and ${y} is ${box}`); 
+        }
+    }
+    else{
+        console.log('enter numbers greater than 0');
+    }
+ </script> -->
+
+ <!--ВСЕ ДЕЛИТЕЛИ -->
+ <!-- <script>
+ let x = +prompt('Enter number');
+ let box = x-1;
+ while(box > 1){
+     if (x % box == 0){
+         console.log(box);
+     }
+     box--;
+ }
+</script> -->
+
+<!-- КОЛИЧЕСТВО ЦИФР В ЧИСЛЕ -->
+<!-- <script>
+    let x = +prompt('Enter number');
+    let digNum = 1;
+    let y = 10;
+    while (y <= x){
+        y = y * 10;
+        digNum++;
+    }
+    console.log(`number of figures is ${digNum}`);
+</script> -->
+
+<!-- 10 ЧИСЕЛ -->
+<!-- <script>
+let even = 0;
+let odd = 0;
+let pos = 0;
+let neg = 0;
+let zero = 0;
+let amountEnterNum = 1;
+
+while (amountEnterNum <= 10){
+let x = +prompt(`Enter number ${amountEnterNum}`);
+
+if (x > 0){
+    pos++;
+    }
+    else{
+    if (x < 0){
+         neg++;
+    }
+       else {
+         zero++;  
+       }
+    }
+if (x !=0) {
+    if (x%2 == 0 ) {
+        even++;
+    }
+    else{
+        odd++;
+    }
+}
+    amountEnterNum++;
+}
+alert(`number of: 
+even is ${even} 
+odd is ${odd} 
+positive is ${pos} 
+negative is ${neg} 
+zero is ${zero}`);   -->
+</script> 
+</body>
+</html>
