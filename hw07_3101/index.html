@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// 1 ДВА ЧИСЛА 
+//         function min (x,y){
+//     if (x<y){
+//         return -1;
+//     }
+//     else if (x>y){
+//         return 1;
+//     }
+//     else{
+//         return 0;
+//     }
+// }
+// console.log(min(7,3))
+// console.log(min(7,3))
+// console.log(min(3,3))
+// console.log(min(7,43))
+// console.log(min(70,3))
+
+// 2 ФАКТОРИАЛ
+// let x = +prompt('enter number');
+
+// function factorial(num){
+//     if (num === 1) return 1;
+//     else return num * factorial(num-1);
+// }
+
+// console.log(factorial(x));
+
+// 3 ТРИ ЦИФРЫ В ОДНО ЧИСЛО
+// let x = +prompt('enter first number');
+// let y = +prompt('enter second number');
+// let z = +prompt('enter third number');
+
+// function oneNumber(){
+//     return x*100 + y*10 + z;
+// }
+// console.log(oneNumber());
+
+// 4 ПЛОЩАДЬ ПРЯМОУГОЛЬНИКА
+
+// function areaRect(num1, num2){
+    
+//     if (num2 === undefined){
+//         return num1 * num1;
+//     } 
+//     return num1 * num2;
+// }
+// console.log(areaRect(4,5));  
+// console.log(areaRect(5));  
+// console.log(areaRect(41,25));  
+
+// 5 СОВЕРШЕННОЕ ЧИСЛО
+
+// 5.1 функция суммы всех делителей
+
+// function sumAlldiv(x){
+//  let box = x-1;
+//  let y=0;
+//  while(box >= 1){
+//      if (x % box == 0){
+//          y = y+box; 
+//      }    
+//      box--;
+//     }
+//      return y;
+// }
+
+// let x = +prompt('Enter number');
+// if (x == (sumAlldiv(x))){
+//     console.log('perfect');
+// }else{
+//     console.log('not a perfect');   
+// }
+
+// console.log(`enter number is ${x}`);
+// console.log(`sum of all divisors is ${(sumAlldiv(x))}`);
+
+
+
+// 5.2
+// функция проверки числа
+function check(x){
+ let box = x-1;
+ let sumDiv=0;
+ while(box >= 1){
+     if (x % box == 0){
+         sumDiv = sumDiv+box; 
+     }    
+     box--;
+    }
+  if (x == sumDiv){
+    return'perfect';
+}else{
+    return 'not a perfect';   
+}
+}
+
+let x = +prompt('Enter number');
+console.log(`number is ${(check(x))}`);
+
+    </script>
+</body>
+</html>
